@@ -8,6 +8,11 @@ p {
 	font-size: 13px;
 }
 
+sup {
+	font-size: 0.6em;
+	vertical-align: 4px;
+}
+
 .page-size-wrap {
 	width: 1024px;
 	margin-left: auto;
@@ -55,6 +60,7 @@ nav ul li:first-child {
 main {
 	text-align: center;
 	margin-top: 30px;
+	margin-bottom: 60px;
 }
 
 h1 {
@@ -76,4 +82,32 @@ h2 {
 p.lead-description {
 	margin-top: 20px;
 	margin-bottom: 30px;
+}
+
+.features {
+	/* get rid of flex */
+	display: flex;
+	justify-content: space-between;
+
+	width: 100%;
+}
+
+.features figure {
+	flex-basis: 100%;
+
+	margin-left: 10px;
+}
+.features figure:first-child {
+	margin-left: 0;
+}
+
+.features figure img {
+	max-width: 100%;
+	height: 98px;
+}
+
+.features figcaption {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 10px;
 }
