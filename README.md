@@ -1,0 +1,2 @@
+# sony-home-page-scaffolding
+
