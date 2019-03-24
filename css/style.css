@@ -13,6 +13,12 @@ sup {
 	vertical-align: 4px;
 }
 
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
 .page-size-wrap {
 	width: 1024px;
 	margin-left: auto;
@@ -85,20 +91,16 @@ p.lead-description {
 }
 
 .features {
-	/* get rid of flex */
-	display: flex;
-	justify-content: space-between;
-
 	width: 100%;
 }
 
 .features figure {
-	flex-basis: 100%;
+	box-sizing: border-box;
+	width: calc(100% / 3);
 
-	margin-left: 10px;
-}
-.features figure:first-child {
-	margin-left: 0;
+	display: inline-block;
+	float: left;
+	padding: 0 10px;
 }
 
 .features figure img {
