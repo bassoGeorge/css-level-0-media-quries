@@ -28,7 +28,7 @@ sup {
 	box-sizing: border-box;
 }
 
-.header-wrap {
+.black-wrap {
 	background: black;
 }
 
@@ -112,4 +112,22 @@ p.lead-description {
 	font-size: 16px;
 	font-weight: bold;
 	margin-bottom: 10px;
+}
+
+footer {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.footer-section {
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #333;
+}
+
+.footer-section:last-of-type {
+	border-bottom: none;
 }
